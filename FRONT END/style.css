@@ -1,0 +1,289 @@
+/* Estilos gerais */
+body {
+    font-family: 'Roboto', sans-serif; /* Fonte Roboto - Google Fonts */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Cor de fundo suave */
+    color: #333; /* Cor de texto */
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #007bff; /* Azul claro - cor principal */
+    padding: 20px;
+    color: white; /* Texto branco */
+
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Links alinhados à direita */
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s; /* Transição suave para a cor */
+}
+
+nav a:hover {
+    color: #ffc107; /* Amarelo - cor de destaque */
+}
+
+/* Conteúdo principal */
+main {
+    padding: 40px;
+}
+
+.hero {
+    background-color: white;
+    padding: 60px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.hero h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #007bff; /* Azul claro - cor principal */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    background-color: #ffc107; /* Amarelo - cor de destaque */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transição suave para o fundo */
+}
+
+.hero button:hover {
+    background-color: #e0a800; /* Amarelo mais escuro */
+}
+
+.sobre {
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sobre h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.sobre p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.servicos {
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.servico {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 30%;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.servico h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.servico p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.contato {
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contato h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.contato p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.contato form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contato label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contato input, 
+.contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contato button {
+    background-color: #007bff; /* Azul claro - cor principal */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contato button:hover {
+    background-color: #0056b3; /* Azul mais escuro */
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #007bff; /* Azul claro - cor principal */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos específicos para fonoaudiólogos */
+.fonoaudiologos {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.fonoaudiologo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.fonoaudiologo img {
+    margin-right: 20px;
+    border-radius: 50%;
+    width: 150px; /* Ajuste a largura da imagem conforme necessário */
+    height: 150px; /* Ajuste a altura da imagem conforme necessário */
+}
+
+/* Estilo personalizado para imagens */
+.img-custom {
+    width: 150px; /* Largura da imagem */
+    height: 100px; /* Altura da imagem */
+    position: relative; /* Mudando para relativa para ajustar em relação ao texto */
+    top: 0; /* Resetando a posição */
+    left: 0; /* Resetando a posição */
+}
+
+/* Estilos para a seção de agendamento */
+.agendamento {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.agendamento h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.agendamento p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.agendamento form {
+    display: flex;
+    flex-direction: column;
+}
+
+.agendamento label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.agendamento input, 
+.agendamento select, 
+.agendamento textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.agendamento button {
+    background-color: #007bff; /* Azul claro - cor principal */
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.agendamento button:hover {
+    background-color: #0056b3; /* Azul mais escuro */
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="Bruno Castro Tomaz">
+    <title>FonoConnect - Sua Saúde Auditiva Online</title/>	
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>FonoConnect</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="fonoaudiologos.html">Fonoaudiólogos</a></li>
+                <li><a href="contato.html">Contatos</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Sua saúde auditiva, em suas mãos.</h2>
+            <p>Agendamento online, consultas por videochamada e acompanhamento personalizado com fonoaudiólogos experientes.</p>
+            <button id="agendar-consulta">Agendar Consulta</button>
+        </section>
+
+        <section class="sobre">
+            <h2>Sobre o FonoConnect</h2>
+            <p>O FonoConnect é uma plataforma inovadora que conecta pacientes a fonoaudiólogos qualificados para consultas online. Nossa missão é democratizar o acesso a serviços de fonoaudiologia, proporcionando conveniência, acessibilidade e qualidade para todos.</p>
+        </section>
+
+        <section class="servicos">
+            <h2>Nossos Serviços</h2>
+            <div class="servico">
+                <h3>Consultas Online</h3>
+                <p>Agende consultas com fonoaudiólogos experientes através do nosso sistema online, em data e hora que melhor lhe convém.</p>
+            </div>
+            <div class="servico">
+                <h3>Acompanhamento Personalizado</h3>
+                <p>Receba um plano de tratamento individualizado, com exercícios e dicas personalizadas para alcançar seus objetivos.</p>
+            </div>
+            <div class="servico">
+                <h3>Segurança e Confidencialidade</h3>
+                <p>Seus dados e informações são tratados com total segurança e confidencialidade, garantindo a privacidade durante todo o processo.</p>
+            </div>
+        </section>
+
+        <section class="contato">
+            <h2>Fale Conosco</h2>
+            <p>Tem alguma dúvida? Entre em contato conosco através do formulário abaixo.</p>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 FonoConnect - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
