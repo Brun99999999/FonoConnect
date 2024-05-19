@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>FonoConnect - Sua Saúde Auditiva Online</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="homepage.css" />  <!-- Adiciona o arquivo CSS específico -->
+    <script src="script.js" defer></script>
+
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar/index.global.min.js'></script>
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+        const calendarEl = document.getElementById('calendar')
+        const calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth',
+          locale: 'pt-br',
+          height: 550,
+          buttonText: {
+            today: 'Hoje' // Define o texto do botão "Today" como "Hoje"
+        },
+          events: [
+            { title: 'Consulta com Dr. João', start: '2024-05-10' },
+            { title: 'Consulta com Dra. Maria', start: '2024-05-20' }
+        ] // Substitua com seus eventos reais
+        })
+        calendar.render()
+      })
+
+    </script>
+
+</head>
+<body>
+    <header>
+        <h1>FonoConnect</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="fonoaudiologos.html">Fonoaudiólogos</a></li>
+                <li><a href="contato.html">Contatos</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home-content">
+            <aside class="sidebar">
+                <h2>Serviços</h2>
+                <ul>
+                    <li><a href="#" id="servico-audiologia">Audiologia</a></li>
+                    <li><a href="#" id="servico-fala">Fala e Linguagem</a></li>
+                    <li><a href="#" id="servico-voz">Voz</a></li>
+                    <li><a href="#" id="servico-motricidade">Motricidade Orofacial</a></li>
+                    <li><a href="#" id="servico-ouvido">Saúde Auditiva Infantil</a></li>
+                    <li><a href="#" id="servico-outras">Outros Serviços</a></li>
+                </ul>
+            </aside>
+
+            <section class="main-content">
+                <div class="calendar-container">
+                    <h2>Minhas Consultas</h2>
+                    <div id="calendar"></div>
+                </div>
+                <div class="welcome-message">
+                    <h2>Bem-vindo ao FonoConnect!</h2>
+                    <p>Gerencie suas consultas, encontre fonoaudiólogos especializados e cuide da sua saúde auditiva com praticidade e segurança.</p>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 FonoConnect - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

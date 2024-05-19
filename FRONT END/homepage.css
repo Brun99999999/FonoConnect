@@ -1,0 +1,86 @@
+/* Estilos para homepage.html */
+.home-content {
+    display: flex;
+    padding: 40px; /* Espaçamento externo */
+}
+
+.sidebar {
+    width: 25%; /* Largura do menu lateral */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin-right: 20px; /* Espaçamento entre o menu e o conteúdo */
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff; /* Azul claro - cor principal */
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #333; /* Cor de texto */
+    font-weight: bold;
+    transition: color 0.3s; /* Transição suave para a cor */
+}
+
+.sidebar a:hover {
+    color: #ffc107; /* Amarelo - cor de destaque */
+}
+
+.main-content {
+    width: 70%; /* Largura do conteúdo principal */
+}
+
+.calendar-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin-bottom: 20px;
+}
+
+.calendar-container h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff; /* Azul claro - cor principal */
+    margin-bottom: 10px;
+}
+
+.welcome-message {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    text-align: center;
+}
+
+.welcome-message h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #007bff; /* Azul claro - cor principal */
+    margin-bottom: 10px;
+}
+
+.welcome-message p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333; /* Cor de texto */
+}
+
+/* Estilos para o calendário (FullCalendar.js) */
+#calendar {
+    /* Estilos específicos para o calendário FullCalendar */
+}

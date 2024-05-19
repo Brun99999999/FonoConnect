@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="Bruno Castro Tomaz">
+    <title>FonoConnect - Login</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <h1>FonoConnect</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="fonoaudiologos.html">Fonoaudiólogos</a></li>
+                <li><a href="contato.html">Contatos</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="login-container">
+            <h2>Login</h2>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required oninput="maskInput(this)">
+
+                <button type="submit"><a href="homepage.html">Entrar</a></button>
+            </form>
+            <p>Ainda não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+        </section>
+    </main>
+
+    <script>
+        function maskInput(input) {
+            input.value = input.value.replace(/./g, '*');
+        }
+    </script>
+
+    <footer>
+        <p>© 2023 FonoConnect - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
