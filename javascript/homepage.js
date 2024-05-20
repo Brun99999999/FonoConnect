@@ -7,21 +7,21 @@ const consultas = [
         data: "2024-05-28",
         hora: "10:00",
         detalhes: "Terapia sonora",
-        link: "consulta-detalhes.html"
+        link: "../html/videoconferencia.html"
     },
     {
         titulo: "Consulta com Dra. Maria",
         data: "2024-05-30",
         hora: "14:00",
         detalhes: "Adaptação de próteses auditivas",
-        link: "consulta-detalhes.html" 
+        link: "../html/videoconferencia.html" 
     },
     {
         titulo: "Consulta com Dr. Pedro",
         data: "2024-05-20",
         hora: "16:00",
         detalhes: "Avaliação auditiva",
-        link: "consulta-detalhes.html" 
+        link: "../html/videoconferencia.html" 
     }
 ];
 
@@ -54,6 +54,9 @@ function criarCardConsulta(consulta) {
         const btn = document.createElement('button');
         btn.textContent = "Acessar consulta";
         btn.classList.add('btn');
+        btn.addEventListener('click', () => {
+            window.location.href = consulta.link;
+        });
         card.appendChild(btn);
     }
 

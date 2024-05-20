@@ -37,7 +37,7 @@
 }
 
 .sidebar a:hover {
-    color: #ffc107; /* Amarelo - cor de destaque */
+    color: #f24f00; /* Amarelo - cor de destaque */
 }
 
 .main-content {
@@ -104,10 +104,14 @@
 }
 
 .consulta-card .btn {
-    background-color: #ffc107; /* Amarelo - cor de destaque */
+    background-color: #f24f00; /* Amarelo - cor de destaque */
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.consulta-card .btn:hover {
+    background-color: #007bff;
 }

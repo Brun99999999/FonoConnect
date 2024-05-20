@@ -72,7 +72,7 @@ main {
 }
 
 .hero button {
-    background-color: #ffc107; /* Amarelo - cor de destaque */
+    background-color: #f24f00; /* Amarelo - cor de destaque */
     color: white;
     padding: 15px 30px;
     border: none;
@@ -84,7 +84,7 @@ main {
 }
 
 .hero button:hover {
-    background-color: #e0a800; /* Amarelo mais escuro */
+    background-color: #007bff; /* Amarelo mais escuro */
 }
 
 .sobre {
@@ -173,7 +173,7 @@ main {
 }
 
 .contato button {
-    background-color: #007bff; /* Azul claro - cor principal */
+    background-color: #f24f00; /* Azul claro - cor principal */
     color: white;
     padding: 15px 30px;
     border: none;
@@ -185,7 +185,7 @@ main {
 }
 
 .contato button:hover {
-    background-color: #0056b3; /* Azul mais escuro */
+    background-color: #007bff; /* Azul mais escuro */
 }
 
 /* Estilos do rodapé */
@@ -273,7 +273,7 @@ footer {
 }
 
 .agendamento button {
-    background-color: #007bff; /* Azul claro - cor principal */
+    background-color: #f24f00; /* Azul claro - cor principal */
     color: white;
     padding: 15px 20px;
     border: none;
@@ -285,7 +285,7 @@ footer {
 }
 
 .agendamento button:hover {
-    background-color: #0056b3; /* Azul mais escuro */
+    background-color: #007bff; /* Azul mais escuro */
 }
 
 .login-container {
@@ -318,12 +318,16 @@ footer {
 }
 
 .login-container button {
-    background-color: #007bff; /* Azul padrão do FonoConnect */
+    background-color: #f24f00; /* Azul padrão do FonoConnect */
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #007bff;
 }
 
 .cadastro-container {
