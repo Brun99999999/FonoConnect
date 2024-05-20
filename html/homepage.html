@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>FonoConnect - Sua Saúde Auditiva Online</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="homepage.css" />  <!-- Adiciona o arquivo CSS específico -->
-    <script src="script.js" defer></script>
+    <title>FonoConnect - Minha Página</title>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/homepage.css" />  <!-- Adiciona o arquivo CSS específico -->
+    <script src="../javascript/homepage.js" defer></script>
 
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar/index.global.min.js'></script>
     <script>
@@ -21,8 +21,8 @@
             today: 'Hoje' // Define o texto do botão "Today" como "Hoje"
         },
           events: [
-            { title: 'Consulta com Dr. João', start: '2024-05-10' },
-            { title: 'Consulta com Dra. Maria', start: '2024-05-20' }
+            { title: 'Consulta com Dr. João', start: '2024-05-10', details: 'Terapia sonora' },
+            { title: 'Consulta com Dra. Maria', start: '2024-05-20', details: 'Adaptação de próteses auditivas' }
         ] // Substitua com seus eventos reais
         })
         calendar.render()
@@ -36,11 +36,11 @@
         <h1>FonoConnect</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre.html">Sobre Nós</a></li>
-                <li><a href="fonoaudiologos.html">Fonoaudiólogos</a></li>
-                <li><a href="contato.html">Contatos</a></li>
-                <li><a href="login.html">Login</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../html/sobre.html">Sobre Nós</a></li>
+                <li><a href="../html/fonoaudiologos.html">Fonoaudiólogos</a></li>
+                <li><a href="../html/contato.html">Contatos</a></li>
+                <li><a href="../html/login.html">Login</a></li>
             </ul>
         </nav>
     </header>
@@ -64,9 +64,21 @@
                     <h2>Minhas Consultas</h2>
                     <div id="calendar"></div>
                 </div>
+
                 <div class="welcome-message">
-                    <h2>Bem-vindo ao FonoConnect!</h2>
-                    <p>Gerencie suas consultas, encontre fonoaudiólogos especializados e cuide da sua saúde auditiva com praticidade e segurança.</p>
+                    <div class="consultas-container">
+                        <h2>Consultas de Hoje</h2>
+                        <div class="consultas">
+                            <!-- Aqui serão inseridos os cards das consultas de hoje -->
+                        </div>
+                    </div>
+
+                    <div class="consultas-container">
+                        <h2>Próximas Consultas</h2>
+                        <div class="consultas">
+                            <!-- Aqui serão inseridos os cards das próximas consultas -->
+                        </div>
+                    </div>
                 </div>
             </section>
         </section>
@@ -76,6 +88,6 @@
         <p>© 2023 FonoConnect - Todos os direitos reservados.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="/javascript/script.js"></script>
 </body>
 </html>

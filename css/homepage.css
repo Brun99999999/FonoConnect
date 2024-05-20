@@ -80,7 +80,34 @@
     color: #333; /* Cor de texto */
 }
 
-/* Estilos para o calendário (FullCalendar.js) */
-#calendar {
-    /* Estilos específicos para o calendário FullCalendar */
+/* Estilos para cada card de consulta */
+.consulta-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin-bottom: 15px; /* Espaçamento entre os cards */
+}
+
+.consulta-card h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff; /* Azul claro - cor principal */
+    margin-bottom: 10px;
+}
+
+.consulta-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333; /* Cor de texto */
+    margin-bottom: 5px;
+}
+
+.consulta-card .btn {
+    background-color: #ffc107; /* Amarelo - cor de destaque */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
