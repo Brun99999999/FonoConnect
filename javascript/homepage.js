@@ -38,16 +38,16 @@ function criarCardConsulta(consulta) {
     const card = document.createElement('div');
     card.classList.add('consulta-card');
     
-    const detalhes = document.createElement('p');
+    const detalhes = document.createElement('h3');
     detalhes.textContent = consulta.detalhes;
     card.appendChild(detalhes);
 
-    const titulo = document.createElement('h3');
+    const titulo = document.createElement('p');
     titulo.textContent = consulta.titulo;
     card.appendChild(titulo);
 
     const dataHora = document.createElement('p');
-    dataHora.textContent = `${consulta.data} às ${consulta.hora}`;
+    dataHora.textContent = `Horário agendado: ${consulta.hora}`;
     card.appendChild(dataHora);
 
     if (consulta.data === dataHoje) {
